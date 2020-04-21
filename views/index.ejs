@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= title %></title>
+</head>
+
+<body>
+  <!-- <a href="/customers">Go to customers</a> -->
+  <div class="mx-4">
+    <div class="row mt-2">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        Press 'Generate' to get the API key
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <input type="text" class="form-control" name="" id="generatebutton" disabled placeholder="Copy the generated">
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <button type="button" class="btn btn-primary">Generate key</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+
+  /* $(document).ready(function () {
+    const data = fetch('http://127.0.0.1:7000/login', {
+      method: 'post',
+      headers: {
+        Authorization: `Basic ${btoa('username:password')}`,
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: 'password=test',
+    });
+    data.then(response => response.json()).then( data => {
+      console.log(data);
+      $('#generatebutton').val(data.token);
+    })
+  }); */
+</script>
+
+</html>

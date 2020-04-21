@@ -1,0 +1,5 @@
+/node_modules
+/tsconfig.json
+/src/routes
+/src/services
+/src/test

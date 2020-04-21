@@ -1,0 +1,21 @@
+version: "3.3"
+
+networks:
+  vlan20:
+    name: vlan20
+    driver: macvlan
+    driver_opts:
+      parent: ens192.20
+    ipam:
+      config:
+        - subnet: 192.168.20.0/24
+          gateway: 192.168.20.1
+  vlan30:
+    name: vlan30
+    driver: macvlan
+    driver_opts:
+      parent: ens192.30
+    ipam:
+      config:
+        - subnet: 192.168.30.0/24
+          gateway: 192.168.30.1
